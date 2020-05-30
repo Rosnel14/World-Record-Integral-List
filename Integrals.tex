@@ -1,16 +1,19 @@
-\documentclass[twoside, fleqn,12pt, letterpaper]{article}
+\documentclass[twoside, fleqn,12pt,letterpaper]{article}
 
+\usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{cancel}
+\usepackage{geometry}
+ \geometry{letterpaper,left=25mm,right=25mm}
 
 \title{\textbf{World Record Integral List}}
 \author{Rosnel Alejandro Leyva-Cortes \& William Abou-Rjaili}
 
-\newcommand{\makeitem}[1]{\item \begin{align*} {#1}
+\newcommand{\makeitem}[2]{\item {#2}\begin{align*} {#1}
   \end{align*}}
 
 \begin{document}
@@ -18,10 +21,10 @@
 \maketitle
 
 \section*{Introduction}
-Here are the list of integrals I will be attempting to solve. 
+Here is the list of integrals I will be attempting to solve. 
 The list is compiled here for your enjoyment, i.e. math for fun and glory.
 
-
+\newpage
 
 \section*{List of Integrals}
 \begin{multicols}{2}
@@ -163,7 +166,7 @@ The list is compiled here for your enjoyment, i.e. math for fun and glory.
   
   \makeitem {\int \cos\sqrt{x}\,dx}
   
-\makeitem {{\int_{5.244044240850758}^{11.51086443322134}x \, dx}}
+  \makeitem {{\int_{5.244044240850758}^{11.51086443322134}x \, dx}}
   
   \makeitem  {\int \sin(\ln x) \, dx}
   
@@ -175,9 +178,9 @@ The list is compiled here for your enjoyment, i.e. math for fun and glory.
   
   \makeitem  {\int x^2\sin(2x) \, dx}
   
-  \makeitem {\int\sqrt{x\cdot\sqrt[3]{x\cdot\sqrt[4]{x\cdot\sqrt[5]{x\ldots}}}}\, dx}
+  \makeitem {\int\sqrt{x\cdot\sqrt[3]{x\cdot\sqrt[4]{x\cdot\sqrt[5]{x\ldots}}}}\, dx}{\cite{MITQuali2018}}
   
-  \makeitem{\int_{0}^{\frac{\pi}{4}}x\prod_{k=1}^{\infty} \cos\left(\frac{x}{2^k}\right)\, dx}
+  \makeitem{\int_{0}^{\frac{\pi}{4}}x\prod_{k=1}^{\infty} \cos\left(\frac{x}{2^k}\right)\, dx}{\cite{MITQuali2015}}
   
   \makeitem{\int_{0}^{5}e^{3x} \, dx}
   
@@ -191,19 +194,19 @@ The list is compiled here for your enjoyment, i.e. math for fun and glory.
   
   \makeitem{\int e^{\cos x}\sin(x) \, dx}
   
-  \makeitem{\int\frac{1}{x}\prod_{i=1}^{\infty}\left(1-\tan^2\left(\frac{x}{2^i}\right)\right)\,dx}
+  \makeitem{\int\frac{1}{x}\prod_{i=1}^{\infty}\left(1-\tan^2\left(\frac{x}{2^i}\right)\right)\,dx}{\cite{FlammableMaths}}
   
-  \makeitem{\int\sqrt{x\sqrt{x\sqrt{x\sqrt{x\ldots}}}}\,dx}
+  \makeitem{\int\sqrt{x\sqrt{x\sqrt{x\sqrt{x\ldots}}}}\,dx}{\cite{MITQuali2020}}
   
   \makeitem{\int \frac{1}{\sqrt{1-x^2}} \, dx}
   
-  \makeitem{\int_{0}^{\infty}x^ne^{-x}\,dx}
+  \makeitem{\int_{0}^{\infty}x^n e^{-x}\,dx}
   
   \makeitem{\int_{0}^{1}x^{-x}\,dx}
   
   \makeitem{\int\frac{x^{-\frac{1}{2}}}{1+x^{\frac{1}{3}}}\,dx}
   
-  \makeitem{\int x^i\, dx}
+  \makeitem{\int x^i\, dx}{\cite{blackpenredpen}}
   
   \makeitem{\int \tan^5 x \, \sec^3 x \, dx}
   
@@ -215,12 +218,15 @@ The list is compiled here for your enjoyment, i.e. math for fun and glory.
   
   \makeitem{\int_{0}^{\infty}\frac{x}{e^x-1}\, dx}
   
-  \makeitem{\int_{2}^{4}\frac{\sqrt{\ln{(9-x)}}}{\sqrt{\ln{(9-x)}}+\sqrt{\ln{(x+3)}}}\, dx}
+  \makeitem{\int_{2}^{4}\frac{\sqrt{\ln{(9-x)}}}{\sqrt{\ln{(9-x)}}+\sqrt{\ln{(x+3)}}}\, dx}{\cite{Putnam1987}}
 
 
 \end{enumerate}
 \end{multicols}
 
+\newpage
+
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{references} 
+
 \end{document}
