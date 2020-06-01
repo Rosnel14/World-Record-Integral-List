@@ -1,5 +1,5 @@
 \documentclass[twoside, fleqn,12pt,letterpaper]{book}
-%Testing Github
+
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage[utf8]{inputenc}
@@ -17,6 +17,10 @@
   \end{align*}}
   
 \newcommand{\makeitemtextb}[1]{\makeitem{{#1}}{\cite{RosTextbook}}}
+
+\newcommand{\makeitemblack}[1]{\makeitem{{#1}}{\cite{bprp}}}
+
+\newcommand{\makeitemlamar}[1]{\makeitem{{#1}}{\cite{lamar}}}
 
 \begin{document}
 
@@ -160,7 +164,7 @@
   
   \makeitemtextb {\int_{1}^{2}\frac{\ln(x)^2}{x^3} \, dx}
   
-  \makeitem {\int \cos\sqrt{x}\,dx}
+  \makeitemtextb {\int \cos\sqrt{x}\,dx}
   
   \makeitem {{\int_{5.244044240850758}^{11.51086443322134}x \, dx}}
   
@@ -174,47 +178,118 @@
   
   \makeitemtextb  {\int x^2\sin(2x) \, dx}
   
-  \makeitem {\int\sqrt{x\cdot\sqrt[3]{x\cdot\sqrt[4]{x\cdot\sqrt[5]{x\ldots}}}}\, dx}{\cite{MITQuali2018}}
   
-  \makeitem{\int_{0}^{\frac{\pi}{4}}x\prod_{k=1}^{\infty} \cos\left(\frac{x}{2^k}\right)\, dx}{\cite{MITQuali2015}}
+  \makeitemtextb{\int_{0}^{5}e^{3x} \, dx}
   
-  \makeitem{\int_{0}^{5}e^{3x} \, dx}
+  \makeitemtextb{\int_{0}^{1}xe^{-x^2} \, dx} 
   
-  \makeitem{\int_{0}^{1}xe^{-x^2} \, dx} 
+  \makeitemtextb{\int e^x\sqrt{1+e^x} \, dx}
   
-  \makeitem{\int e^x\sqrt{1+e^x} \, dx}
+  \makeitemtextb{\int\frac{(1+e^x)^2}{e^x} \, dx}
   
-  \makeitem{\int\frac{(1+e^x)^2}{e^x} \, dx}
+  \makeitemtextb{\int e^x\sin(e^x) \, dx}
   
-  \makeitem{\int e^x\sin(e^x) \, dx}
+  \makeitemtextb{\int e^{\cos x}\sin(x) \, dx}
   
-  \makeitem{\int e^{\cos x}\sin(x) \, dx}
-  
-  \makeitem{\int\frac{1}{x}\prod_{i=1}^{\infty}\left(1-\tan^2\left(\frac{x}{2^i}\right)\right)\,dx}{\cite{FlammableMaths}}
-  
-  \makeitem{\int\sqrt{x\sqrt{x\sqrt{x\sqrt{x\ldots}}}}\,dx}{\cite{MITQuali2020}}
   
   \makeitem{\int \frac{1}{\sqrt{1-x^2}} \, dx}
   
-  \makeitem{\int_{0}^{\infty}x^n e^{-x}\,dx}
+  \makeitemtextb{\int_{0}^{\infty}x^n e^{-x}\,dx}
   
-  \makeitem{\int_{0}^{1}x^{-x}\,dx}
   
   \makeitem{\int\frac{x^{-\frac{1}{2}}}{1+x^{\frac{1}{3}}}\,dx}
   
-  \makeitem{\int x^i\, dx}{\cite{blackpenredpen1}}
   
-  \makeitem{\int \tan^5 x \, \sec^3 x \, dx}{\cite{blackpenredpen2}}
+  \makeitem{\int \tan^5 x \, \sec^3 x \, dx}{\cite{bprp}}
   
-  \makeitem{\int \frac{\cos{2x}}{\sin{x} + \cos{x}} \, dx}
+  \makeitemtextb{\int \frac{\cos{2x}}{\sin{x} + \cos{x}} \, dx}
   
-  \makeitem{\int \frac{x^2+1}{x^4-x^2+1} \, dx}
+  \makeitemblack{\int \frac{x^2+1}{x^4-x^2+1} \, dx}
   
-  \makeitem{\int \left(x+\frac{1}{x}\right) \, dx}
+  \makeitemblack{\int \left(x+\frac{1}{x}\right) \, dx}
   
-  \makeitem{\int_{0}^{\infty}\frac{x}{e^x-1}\, dx}
+  \makeitemtextb{\int_{0}^{\infty}\frac{x}{e^x-1}\, dx}
+
+  \makeitemtextb{\int_{-\infty}^{\infty}e^{-x^2}\,dx}
   
-  \makeitem{\int_{2}^{4}\frac{\sqrt{\ln{(9-x)}}}{\sqrt{\ln{(9-x)}}+\sqrt{\ln{(x+3)}}}\, dx}{\cite{Putnam1987}}
+  \makeitemtextb{\int_{1}^{2} (8x^3+3x^2) \, dx} 
+  
+  \makeitemtextb{\int_{0}^{T} (x^4-8x+7) \, dx} 
+  
+  \makeitemtextb{\int_{0}^{1} (1-x^9) \, dx} 
+  
+  \makeitemtextb{\int_{0}^{1} (1-x)^9 \, dx} 
+  
+  \makeitemtextb{\int_{1}^{9} \frac{\sqrt{u}-2u^2}{u} \, du}
+  
+  \makeitemtextb{\int_{0}^{1} y(y^2+1)^5 \, dy}
+  
+  \makeitemtextb{\int_{1}^{5} \frac{dt}{(t-4)^2} \, dt} 
+  
+  \makeitemtextb{\int_{0}^{1} \sin{3\pi t} \, dt} 
+  
+  \makeitemtextb{\int_{0}^{1} v^2\cos{v^3} \, dv } 
+  
+  \makeitemtextb{\int_{-1}^{1} \frac{\sin{x}}{1+x^2} \, dx} 
+  
+  \makeitemtextb{\int \frac{x^2+2x-1}{2x^3+3x^2-2x} \, dx}
+  
+  \makeitemtextb{\int\frac{x^4-2x^2+4x+1}{x^3-x^2-x+1} \, dx} 
+  
+  \makeitemtextb{\int \frac{2x^2-x+4}{x^3+4x} \, dx}
+  
+  \makeitemtextb{\int \frac{4x^2-3x+2}{4x^2-4x+3} \, dx} 
+  
+ \makeitemtextb{\int \frac{x}{x-6} \, dx} 
+ 
+ \makeitemtextb{\int \frac{r^2}{r+4} \, dr }
+ 
+ \makeitemtextb{\int 2x\sqrt{1+x^2} \, dx} 
+ 
+ \makeitemtextb{\int x^3\cos{(x^4+2)} \, dx} 
+ 
+ \makeitemtextb{\int \sqrt{2x+1} \, dx} 
+ 
+ \makeitemtextb{\int \frac{x}{\sqrt{1-4x^2}} \, dx}
+ 
+ \makeitemtextb{\int \cos{5x} \, dx}
+  
+  \makeitemtextb{\int_{-\pi/5}^{\pi/4} \frac{t^4\tan{t}}{2 + \cos{t}} \, dt} 
+  
+  \makeitemtextb{\int \frac{x+2}{\sqrt{x^2+4x}} \, dx}
+  
+  
+  \makeitemtextb{\int \sin{\pi t} \cos{\pi t} \, dt}
+  
+  \makeitemtextb{\int \sin{x} \cos({\cos{x}}) \, dx }
+  
+  \makeitemtextb{\int_{0}^{\pi/8} \sec{2\theta} \tan{2\theta} \, d\theta }
+  
+  \makeitemtextb{\int_{0}^{\pi/4} (1+\tan{t})^3 \sec^2{t} \, dt} 
+  
+  \makeitemtextb{\int_{0}^{3} |x^2-4| \, dx} 
+  
+  \makeitemtextb{\int_{0}^{4} |\sqrt{x}-1| \, dx} 
+  
+  \makeitemtextb{\int \sqrt{1+x^2} x^5 \, dx} 
+  
+  \makeitemlamar{\displaystyle \int   {{\left( {8x - 12} \right){{\left( {4{x^2} - 12x} \right)}^4}\,dx}}}
+  
+  \makeitemlamar{\displaystyle \int   {{3{t^{ - 4}}{{\left( {2 + 4{t^{ - 3}}} \right)}^{ - 7}}\,dt}}}
+  
+  \makeitemlamar{\displaystyle \int   {{\left( {3 - 4w} \right){{\left( {4{w^2} - 6w + 7} \right)}^{10}}\,dw}}}
+  
+  \makeitemlamar{\displaystyle \int   {{5\left( {z - 4} \right)\,\,\,\sqrt[3]{{{z^2} - 8z}}\,dz}}}
+  
+  \makeitemlamar{\displaystyle \int   {{90{x^2}\sin \left( {2 + 6{x^3}} \right)\,dx}}}
+  
+  \makeitemlamar{\displaystyle \int   {{\sec \left( {1 - z} \right)\tan \left( {1 - z} \right)\,dz}}}
+  
+  \makeitemlamar{\displaystyle \int   {{\left( {15{t^{ - 2}} - 5t} \right)\cos \left( {6{t^{ - 1}} + {t^2}} \right)\,dt}}}
+  
+  \makeitemlamar{\displaystyle \int   {{\left( {7y - 2{y^3}} \right){{\bf{e}}^{{y^{\,4}} - 7{y^{\,2}}}}\,dy}}}
+  
+  \makeitemlamar{\displaystyle \int   {{\frac{{4w + 3}}{{4{w^2} + 6w - 1}}\,dw}}}
 
 
 \end{enumerate}
